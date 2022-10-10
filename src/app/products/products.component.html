@@ -1,0 +1,49 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+  integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<div class="grid-container">
+  <!-- row 1 -->
+  <div class="search">
+    <div class="display-4"><strong>Products</strong></div>
+    <br>
+    <!-- <label for="">Search:</label> &nbsp; &nbsp;  -->
+    <input type="text" placeholder="Search for product name..." size="50" #tabsearch> &nbsp;
+    <button class="btn btn-info" (click)="getSpecificProducts(tabsearch.value)"> Search</button>
+  </div>
+  <p>{{searchmed}}</p>
+
+  <!-- row 2 -->
+  <div class="product">
+    <div class="subgrid" *ngIf="!displaysearch">
+              
+        <div class="card" *ngFor="let p of allProduct">
+          <div class="card-header ">
+            <img class="card-img-top" src="../../assets/images/tablet1.jfif" alt="tablet">
+            <h3 class="card-title">{{p.name}}</h3>
+          </div>
+          <div class="card-body">
+            <li><b>Use: </b> {{p.use}}</li>
+            <button class="btn" (click)="viewDetails(p.name)">See Details</button>
+          </div>
+        </div>
+               
+    </div>
+    <!-- subgrid closed -->
+    <div *ngIf="displaysearch" class="specificsearch">
+      <div class="card " *ngIf="searchedProduct">
+        <!-- code here the card to display the detail of the specific product searched -->
+        <div class="card-header ">
+          <img class="card-img-top" src="../../assets/images/tablet1.jfif" alt="tablet">
+          <h3 >{{searchedProduct.name}}</h3>
+        </div>
+        <div class="card-body">
+          <li><b>Use: </b> {{searchedProduct.use}}</li>
+          <button class="btn" (click)="viewDetails(searchedProduct.name)">See Details</button>
+        </div>
+      </div>
+    </div>
+    
+    <div *ngIf="showError" class="error">
+      <h4><span class="fas fa-cat"></span> {{errorMessage}}</h4>
+    </div>
+  </div>
+</div>

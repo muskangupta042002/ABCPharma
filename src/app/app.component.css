@@ -1,0 +1,23 @@
+nav{
+    background-color: teal;
+}
+.navbar{
+    border: 0px;
+    border-radius: 0px;
+    background-color: teal;
+}
+.navLinkAlign{
+    padding-left: 300px;
+}
+li{
+        padding-right: 120px;
+}
+.navtext{
+    color: white;
+}
+.navStyle{
+    margin-left:150px ;
+}
+.navbar-brand,.nav-link{
+    color: white;
+}

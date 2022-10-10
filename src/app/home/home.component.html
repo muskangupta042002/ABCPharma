@@ -1,0 +1,69 @@
+
+<div class="body">
+  <div class="row carouselStyle">
+    <div class="col-md-12">
+
+      <!-- Carousel -->
+
+      <div id="sitecarousel" class="carousel slide" data-ride="carousel">
+        <!-- indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#sitecarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#sitecarousel" data-slide-to="1"></li>
+          <li data-target="#sitecarousel" data-slide-to="2"></li>
+        </ul>
+        <!-- images -->
+        <div class="carousel-inner">
+          <div class="carousel-item ">
+            <img src="../../assets/images/carousel5.jfif" class="carouselImage" alt="img1">
+            
+          </div>
+          <div class="carousel-item">
+            <img src="../../assets/images/carousel2.jfif" class="carouselImage" alt="img2">
+          </div>
+          <div class="carousel-item active">
+            <img src="../../assets/images/carousel1.jfif" class="carouselImage" alt="img3">
+            <div class="carousel-caption">
+              <h3><strong>We Value Your Health</strong></h3>
+            </div>
+          </div>
+        </div>
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#sitecarousel" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#sitecarousel" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <!-- vision, mision, why us? -->
+  <div class="grid-container">
+    <div class="one home">
+      <div class="display-4">Why US?</div>
+      <div>
+        <!-- code here to display whyUs data from ts file-->
+        {{whyUs}}
+      </div>
+    </div>
+    <div class="two home">
+      <div class="display-4">Vision</div>
+      <div class="">
+        <!-- code here to display Vision data from ts file-->
+        {{vision}}
+      </div>
+    </div>
+    <div class="three home">
+      <div class="display-4">Mission</div>
+      <div>
+        <!-- code here to display Mission data from ts file-->
+        {{mission}}
+      </div>
+    </div>
+
+  </div>
+
+</div>

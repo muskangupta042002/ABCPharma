@@ -1,0 +1,43 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap:10px;
+    overflow-x: hidden;
+}
+.r1{
+grid-column: 1/2;
+grid-row: 1/2;
+/* background-color: burlywood; */
+}
+.r2{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    /* background-color: peachpuff; */
+}
+form{
+    width: 1600px;
+    margin-left: 10px;
+    padding-top:20px;
+}
+.qd{
+    font-size: 20px;
+    padding:10px;
+}
+.badge{
+    background-color: peachpuff;
+}
+table{
+    width: 1200px;
+    margin-left: 80px;
+    margin-top: 50px;
+}
+.table-bordered{
+    border:  1px solid black;
+}
+.error{
+    padding: 20px;    
+}
+.form-inline {
+    overflow-x: hidden;
+ }
